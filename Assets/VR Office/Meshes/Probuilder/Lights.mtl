@@ -1,0 +1,12 @@
+newmtl Lit
+Kd 0.5 0.5 0.5
+d 1
+
+newmtl EmissiveWhite
+Kd 1 1 1
+d 1
+
+newmtl EmissiveWhiteLight
+Kd 1 1 1
+d 1
+

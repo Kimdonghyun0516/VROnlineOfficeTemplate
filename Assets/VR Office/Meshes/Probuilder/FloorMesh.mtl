@@ -1,0 +1,13 @@
+newmtl BlueGray
+Kd 0 0 0
+d 0
+
+newmtl Floor
+map_Kd TexturesCom_Marble_SlabWhite_1K_albedo.tif
+Kd 0 0 0
+d 0
+
+newmtl EmissiveWhiteLight
+Kd 1 1 1
+d 1
+

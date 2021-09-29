@@ -1,0 +1,8 @@
+newmtl White
+Kd 0 0 0
+d 0
+
+newmtl EmissiveWhiteLight
+Kd 1 1 1
+d 1
+
