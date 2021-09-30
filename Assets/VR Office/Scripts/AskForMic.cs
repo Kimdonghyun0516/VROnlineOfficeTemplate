@@ -15,8 +15,6 @@ namespace ChiliGames
             }
     #endif
             string mic = Microphone.devices[0];
-
         }
-
-}
+    }
 }

@@ -175,7 +175,7 @@ namespace ChiliGames.VROffice
                 vrRig.transform.position = startingPositions[n].position;
                 vrRig.transform.rotation = startingPositions[n].rotation;
             }
-            else if(mode == Mode.VR)
+            else if(mode == Mode.Screen)
             {
                 screenRig.transform.position = startingPositions[n].position;
                 screenRig.transform.rotation = startingPositions[n].rotation;

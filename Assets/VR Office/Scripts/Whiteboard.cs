@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 
 namespace ChiliGames.VROffice
 {
@@ -21,6 +22,7 @@ namespace ChiliGames.VROffice
         bool everyOthrFrame;
 
         [HideInInspector] public PhotonView pv;
+        private Texture2D receivedTexture;
 
         void Start()
         {
@@ -65,7 +67,8 @@ namespace ChiliGames.VROffice
             int x = (int)(pos[0] * textureSize - penSizeD2);
             int y = (int)(pos[1] * textureSize - penSizeD2);
 
-            //If last frame was not touching a marker, we don't need to lerp from last pixel coordinate to new, so we set the last coordinates to the new.
+            //If last frame was not touching a marker, we don't need to lerp from last pixel coordinate to new,
+            //so we set the last coordinates to the new.
             if (!touchingLastFrame)
             {
                 lastX = (float)x;
@@ -127,7 +130,7 @@ namespace ChiliGames.VROffice
         }
 
         //This code below is for sending the whiteboard state to new players joining the room. This is causing lag so it is a WIP. You can still actiavate it but it will lag for 1 second the master client when somebody joins.
-        /*
+
         public override void OnPlayerEnteredRoom(Player newPlayer)
         {
             base.OnPlayerEnteredRoom(newPlayer);
@@ -149,6 +152,7 @@ namespace ChiliGames.VROffice
         void ApplyReceivedTexture()
         {
             GetComponent<Renderer>().material.mainTexture = receivedTexture;
-        }*/
+        }
+
     }
 }

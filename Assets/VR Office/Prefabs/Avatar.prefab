@@ -787,8 +787,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3103275519060036700}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: a0f2e416fe09a3e458e3da32b275ae31, type: 3}
+  m_Controller: {fileID: 9100000, guid: 92c208c026838c0489a77c7db4965bbd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -838,8 +838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RigLayers:
-  - rig: {fileID: 2868904516534775423}
-    active: 1
+  - m_Rig: {fileID: 2868904516534775423}
+    m_Active: 1
   m_Effectors: []
 --- !u!114 &2868904515930056082
 MonoBehaviour:
@@ -920,6 +920,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

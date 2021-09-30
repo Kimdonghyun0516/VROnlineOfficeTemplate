@@ -70,14 +70,14 @@ namespace ChiliGames.VROffice
             RoomOptions options = new RoomOptions();
             options.MaxPlayers = 10;
             PhotonNetwork.JoinOrCreateRoom("VROffice", options, null);
-
         }
 
         public override void OnJoinedRoom()
         {
             //Go to next scene after joining the room
             base.OnJoinedRoom();
-            Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name + " Region: " + PhotonNetwork.CloudRegion);
+            Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + 
+                " | RoomName: " + PhotonNetwork.CurrentRoom.Name + " Region: " + PhotonNetwork.CloudRegion);
             
             SceneManager.LoadScene("Office"); //go to the room scene
         }

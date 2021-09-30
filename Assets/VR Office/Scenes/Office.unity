@@ -542,11 +542,6 @@ MonoBehaviour:
   - {fileID: 1518740348}
   - {fileID: 1892298094}
   - {fileID: 299702102}
-  - {fileID: 1397243688}
-  - {fileID: 431028993}
-  - {fileID: 1987107918}
-  - {fileID: 781104343}
-  - {fileID: 342950647}
   floor: {fileID: 1342491464}
   vrBody: {fileID: 2176608843384903841, guid: 370071b949a1c4f428a15ac5937ec403, type: 3}
   vrRigParts:
@@ -7514,7 +7509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2eb518882602b745a62fd145b82c7f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1025120187}
   m_Colliders:
   - {fileID: 1090634213797323035}
   m_InteractionLayerMask:

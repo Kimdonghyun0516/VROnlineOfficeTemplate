@@ -48,6 +48,7 @@ MonoBehaviour:
   - RPC_SetColor
   - RPC_TeleportEffect
   - SetKinematic
+  - RPC_SendWhiteboard
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
